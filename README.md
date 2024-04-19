@@ -2,7 +2,7 @@ README.md
 #### This repository contains Python scripts that takes a DIFR Report URL and uses the Locally available models like MIstral in this case and Ollama API to query the report or all reports combined. 
 
 ## Features:
-1. download x number of reports from a DIFR Report URL
+1. download x number of reports from a DIFR Report URL (Ref: https://thedfirreport.com/) [Example: https://thedfirreport.com/2024/04/01/from-onenote-to-ransomnote-an-ice-cold-intrusion/]
 2. Normalize the text
 3. Split the text into chunks
 4. Upload the chunks to a `vault.txt`
@@ -52,7 +52,7 @@ Here's an example of the output that you can expect when running the script:
 ```
 Splitting text into chunks: 100%|██████████| 10/10 [00:00<00:00, 100.00it/s]
 Writing chunks to file: 100%|██████████| 10/10 [00:00<00:00, 100.00it/s]
-Text file content appended to vault.txt with each chunk on a separate line. MD5 hash: 09f26e4028e528a10e9f1b8c68e4074b
+Text file content is appended to vault.txt with each chunk on a separate line. MD5 hash: 09f26e4028e528a10e9f1b8c68e4074b
 
 Ask a question about your documents, or type 'quit' to end the chat: what is the initial access during HTML Smuggling attack ?
 Context Pulled from Documents: 
