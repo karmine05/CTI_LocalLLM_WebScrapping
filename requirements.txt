@@ -1,0 +1,9 @@
+networkx==3.3
+torch==2.2.2
+sentence_transformers==2.7.0
+openai==1.21.0
+ollama
+langchain
+beautifulsoup4
+chromadb
+gradio
