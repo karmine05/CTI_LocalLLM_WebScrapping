@@ -10,6 +10,9 @@ README.md
 6. The embeddings are saved locally in `embeddings.pt`; so if you are just running the query engine you don't end up spending time in retarining the model. 
 7. The 'localGPt.py' maintaines a `hash.pid` file that is used to keep track of the differentials as you add or remove reports. 
 
+# Pre req
+1. Insatll Conda (ref: https://docs.conda.io/en/latest/)
+2. Install Ollama (ref: https://ollama.com/)
 
 ## Set up your environment
 ```
@@ -35,6 +38,9 @@ python dfir_report_collector.py
 ## if you konow a bit of python, you can turn this code to be part of localGPT.py
 ## Run the following code to Normalize, create chunks and upload to 'vault.txt'
 python txt_normalizer.py
+
+## Lets make sure Ollama is up and running and for this project we are using Mistral
+ollama run mistral
 
 ## After the above steps are done, run the following code to query the reports
 python localGPT.py
