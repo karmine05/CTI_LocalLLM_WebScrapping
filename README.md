@@ -1,4 +1,3 @@
-README.md
 #### This repository contains Python scripts that takes a DIFR Report URL and uses the Locally available models like MIstral in this case and Ollama API to query the report or all reports combined. 
 
 ## Features:
@@ -10,7 +9,7 @@ README.md
 6. The embeddings are saved locally in `embeddings.pt`; so if you are just running the query engine you don't end up spending time in retarining the model. 
 7. The 'localGPt.py' maintaines a `hash.pid` file that is used to keep track of the differentials as you add or remove reports. 
 
-# Pre req
+## Pre-Requisites
 1. Insatll Conda (ref: https://docs.conda.io/en/latest/)
 2. Install Ollama (ref: https://ollama.com/)
 
