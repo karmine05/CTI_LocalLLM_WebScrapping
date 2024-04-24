@@ -60,7 +60,7 @@ def scrape_bleeping_computer(url):
     return bc_content
 
 def save_to_txt(content, filename):
-    with open(filename, 'w', encoding='utf-8') as file:
+    with open(filename, 'a', encoding='utf-8') as file:
         file.write(content)
 
 if __name__ == "__main__":
@@ -75,22 +75,19 @@ if __name__ == "__main__":
         if option == '1':
             # Scrape DFIR Report
             blog_content = scrape_dfir_report(url)
-            filename = 'dfir_report.txt'
         elif option == '2':
             # Scrape Hacker News
             blog_content = scrape_hacker_news(url)
-            filename = 'hacker_news.txt'
         elif option == '3':
             # Scrape BleepingComputer
             blog_content = scrape_bleeping_computer(url)
-            filename = 'bleeping_computer.txt'
         else:
             print("Invalid option. Please choose either 1, 2, or 3")
             continue
         
-        # Save the content to a text file
+        # Save the content to a common file
         if blog_content:
-            save_to_txt(blog_content, filename)
-            print(f"Blog content saved to '{filename}'")
+            save_to_txt(blog_content, 'blog_post.txt')
+            print("Blog content appended to 'blog_post.txt'")
         else:
             print("Failed to scrape blog content!")
