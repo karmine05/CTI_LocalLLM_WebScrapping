@@ -32,7 +32,7 @@ pip install -r requirements.txt
 ## Usage
 ```
 ## Run the following code and paste the DIFR Report URL you are interested in:
-python dfir_report_collector.py
+python report_collector.py
 
 ## if you konow a bit of python, you can turn this code to be part of localGPT.py
 ## Run the following code to Normalize, create chunks and upload to 'vault.txt'
