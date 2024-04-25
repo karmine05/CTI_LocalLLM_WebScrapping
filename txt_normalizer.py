@@ -11,7 +11,7 @@ RESET_COLOR = '\033[0m'
 
 def upload_txtfile():
     # Normalize whitespace and clean up text
-    with open("XYZ.txt", "r", encoding="utf-8") as vault_file: #Change Filename Here
+    with open("blog_post.txt", "r", encoding="utf-8") as vault_file:
         text = vault_file.read()
         text = re.sub(r'\s+', ' ', text).strip()
 
